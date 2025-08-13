@@ -1,0 +1,12 @@
+# Minimal static app using PHP runtime just to serve /public
+name: app
+type: "php:8.2"
+
+web:
+  locations:
+    "/":
+      root: "public"
+      index:
+        - index.html
+
+# No build steps needed for a purely static site
